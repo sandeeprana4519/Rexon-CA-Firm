@@ -33,13 +33,9 @@ const APP_CONFIG = {
   membershipNotice: "Strictly adhering to the Code of Ethics laid down by the Institute of Chartered Accountants of India (ICAI).",
   
   // Supabase Configuration
-  // INSERT YOUR SUPABASE CREDENTIALS HERE:
-  // 1. Log in to https://app.supabase.com
-  // 2. Select your project -> Project Settings -> API
-  // 3. Copy Project URL and anon public Key
   supabase: {
-    url: "YOUR_SUPABASE_PROJECT_URL", // <-- INSERT YOUR SUPABASE PROJECT URL HERE
-    anonKey: "YOUR_SUPABASE_ANON_KEY", // <-- INSERT YOUR SUPABASE ANON/PUBLIC KEY HERE
+    url: "https://tkxmfrkpkguqzmkawgop.supabase.co",
+    anonKey: "sb_publishable_uAK4KAqYGzMPrREhg2oFEw_lo7fI7kk",
   }
 };
 
