@@ -105,15 +105,24 @@ app.use((req, res) => {
 
 // Hostinger / Passenger / Standalone startup
 if (!process.env.VERCEL) {
-  // Check if running under Phusion Passenger (used by Hostinger & cPanel)
-  if (typeof global !== 'undefined' && typeof global.PhusionPassenger !== 'undefined') {
+  const isPassenger = (typeof global !== 'undefined' && typeof global.PhusionPassenger !== 'undefined') || PORT === 'passenger';
+  
+  if (isPassenger) {
     app.listen('passenger', () => {
       console.log('Rexon CA Firm Server started on Hostinger Phusion Passenger');
     });
   } else {
-    app.listen(PORT, '0.0.0.0', () => {
-      console.log(`Rexon CA Firm Server running on port ${PORT} (Node ${process.version})`);
-    });
+    // If PORT is a number, bind with number. If socket path, bind directly.
+    const portNum = Number(PORT);
+    if (!isNaN(portNum) && portNum > 0) {
+      app.listen(portNum, () => {
+        console.log(`Rexon CA Firm Server running on port ${portNum} (Node ${process.version})`);
+      });
+    } else {
+      app.listen(PORT, () => {
+        console.log(`Rexon CA Firm Server running on socket ${PORT} (Node ${process.version})`);
+      });
+    }
   }
 }
 

@@ -1,0 +1,39 @@
+# =============================================================
+# Hostinger LiteSpeed / Apache Multi-Mode Configuration
+# =============================================================
+
+# Disable directory indexing
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /
+
+# 1. Allow existing files and directories to be served directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 2. Check for clean HTML URLs in dist/
+RewriteCond %{DOCUMENT_ROOT}/dist/$1.html -f
+RewriteRule ^(.*)$ /dist/$1.html [L]
+
+# 3. Check for clean HTML URLs in root
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.*)$ /$1.html [L]
+
+# 4. Check for service sub-routes
+RewriteCond %{DOCUMENT_ROOT}/services/$1.html -f
+RewriteRule ^services/(.*)$ /services/$1.html [L]
+
+# 5. Check for admin sub-routes
+RewriteCond %{DOCUMENT_ROOT}/admin/$1.html -f
+RewriteRule ^admin/(.*)$ /admin/$1.html [L]
+
+# 6. Fallback to dist/index.html or index.html
+<IfModule mod_rewrite.c>
+  RewriteCond %{DOCUMENT_ROOT}/dist/index.html -f
+  RewriteRule ^ dist/index.html [L]
+
+  RewriteCond %{DOCUMENT_ROOT}/index.html -f
+  RewriteRule ^ index.html [L]
+</IfModule>
