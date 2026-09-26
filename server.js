@@ -32,12 +32,12 @@ app.get('/api/health', (req, res) => {
 });
 
 // Clean URL routing & 404 fallback
-app.get('*', (req, res) => {
+app.use((req, res) => {
   // Check if a direct .html file exists for the request path
   const normalizedPath = req.path.replace(/\/$/, '');
   const candidateFile = path.join(distDir, `${normalizedPath}.html`);
   
-  if (fs.existsSync(candidateFile)) {
+  if (candidateFile && fs.existsSync(candidateFile) && fs.statSync(candidateFile).isFile()) {
     return res.sendFile(candidateFile);
   }
 
@@ -50,6 +50,10 @@ app.get('*', (req, res) => {
   res.status(404).send('Page not found');
 });
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Rexon CA Firm Server running on port ${PORT}`);
-});
+if (!process.env.VERCEL) {
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Rexon CA Firm Server running on port ${PORT}`);
+  });
+}
+
+export default app;
