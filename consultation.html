@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Consultation | Chartered Accountant Firm</title>
+  <meta name="description" content="Schedule a consultation with our qualified Chartered Accountants for personal tax, GST, business registration, or statutory audits." />
+  <link rel="canonical" href="https://www.apexca.in/consultation.html" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B1F3A'/><text x='50%' y='62%' font-size='50' font-family='serif' font-weight='bold' fill='%23C9A227' text-anchor='middle'>CA</text></svg>" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- Top Statutory Bar -->
+  <div class="top-statutory-bar">
+    <div class="container">
+      <div><span data-config="membershipNotice">Adhering to ICAI Code of Ethics</span> | <span data-config="workingHours">Mon - Sat: 9:30 AM - 7:00 PM</span></div>
+      <div>
+        <a href="tel:919876543210" data-config-link="phone" data-config="phone">+91 98765 43210</a> | 
+        <a href="/admin/login.html">Admin Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-wordmark">
+        <div class="brand-icon">CA</div>
+        <span data-config="firmName">Rexon CA Firm</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/about.html" class="nav-link">About Us</a>
+        <a href="/services.html" class="nav-link">Services</a>
+        <a href="/services/income-tax.html" class="nav-link">Tax Services</a>
+        <a href="/services/gst.html" class="nav-link">GST</a>
+        <a href="/services/accounting.html" class="nav-link">Accounting</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/919876543210" data-config-link="whatsapp" class="btn btn-whatsapp btn-sm">WhatsApp</a>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <div style="background:var(--primary);color:#FFFFFF;padding:60px 0;">
+    <div class="container">
+      <span class="kicker">Schedule Meeting</span>
+      <h1 style="color:#FFFFFF;font-size:2.75rem;margin-bottom:12px;">Book a Professional Consultation</h1>
+      <p style="color:#CBD5E1;font-size:1.125rem;max-width:650px;">
+        Connect directly with our qualified Chartered Accountants for confidential tax planning, business incorporation, or audit advisory.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Booking Interface -->
+  <main class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:48px;align-items:start;">
+        
+        <!-- Consultation Form Card -->
+        <div class="form-card">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;border-bottom:1px solid var(--border-light);padding-bottom:12px;">
+            <h2 style="font-size:1.5rem;color:var(--primary);">Consultation Request Form</h2>
+            <span style="font-size:0.8125rem;color:var(--text-muted);">Confidential & Secure</span>
+          </div>
+
+          <form id="consultationForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="c_fullName">Full Name <span class="req">*</span></label>
+                <input type="text" id="c_fullName" name="fullName" class="form-control" placeholder="e.g. Ananya Deshmukh" required />
+                <div class="form-feedback">Please enter your full name.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="c_phone">Mobile Number <span class="req">*</span></label>
+                <input type="tel" id="c_phone" name="phone" class="form-control" placeholder="10-digit mobile number" required />
+                <div class="form-feedback">Please enter a valid phone number.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="c_email">Email Address <span class="req">*</span></label>
+                <input type="email" id="c_email" name="email" class="form-control" placeholder="name@example.com" required />
+                <div class="form-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="c_service">Service Required <span class="req">*</span></label>
+                <select id="c_service" name="service" class="form-control" required>
+                  <option value="">Select Service Area</option>
+                  <option value="Income Tax Return Filing">Income Tax Return (ITR)</option>
+                  <option value="Income Tax Notice Assistance">Income Tax Notice Assistance</option>
+                  <option value="GST Registration & Filing">GST Registration & Monthly Return</option>
+                  <option value="Monthly Accounting & Bookkeeping">Monthly Bookkeeping & Accounts</option>
+                  <option value="Company / LLP Registration">Company / LLP Registration</option>
+                  <option value="Statutory / Tax Audit">Statutory / Tax Audit</option>
+                  <option value="Virtual CFO / Advisory">Virtual CFO / Financial Advisory</option>
+                </select>
+                <div class="form-feedback">Please choose a service.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="c_date">Preferred Date <span class="req">*</span></label>
+                <input type="date" id="c_date" name="preferredDate" class="form-control" required />
+                <div class="form-feedback">Please select a valid date.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="c_time">Preferred Time Slot <span class="req">*</span></label>
+                <select id="c_time" name="preferredTime" class="form-control" required>
+                  <option value="">Select Time Slot</option>
+                  <option value="Morning (10:00 AM - 01:00 PM)">Morning (10:00 AM - 01:00 PM)</option>
+                  <option value="Afternoon (02:00 PM - 05:00 PM)">Afternoon (02:00 PM - 05:00 PM)</option>
+                  <option value="Evening (05:00 PM - 07:00 PM)">Evening (05:00 PM - 07:00 PM)</option>
+                </select>
+                <div class="form-feedback">Please choose a preferred time slot.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="c_message">Brief Description of Your Requirement</label>
+              <textarea id="c_message" name="message" class="form-control" rows="4" placeholder="Mention your business turnover, notice details, or specific question..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+              Submit Consultation Request
+            </button>
+          </form>
+        </div>
+
+        <!-- Consultation Guidelines & Direct Contacts -->
+        <div>
+          <div style="background:var(--surface);border:1px solid var(--border-color);border-radius:var(--radius-xl);padding:32px;box-shadow:var(--shadow-sm);margin-bottom:28px;">
+            <h3 style="font-size:1.1875rem;color:var(--primary);margin-bottom:16px;">What to Expect</h3>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;font-size:0.9375rem;color:var(--text-muted);">
+              <li style="display:flex;gap:10px;">
+                <span style="color:var(--accent);font-weight:700;">1.</span>
+                <span><strong>Preliminary Review:</strong> Our senior associates review your requirements prior to the scheduled session.</span>
+              </li>
+              <li style="display:flex;gap:10px;">
+                <span style="color:var(--accent);font-weight:700;">2.</span>
+                <span><strong>Choice of Medium:</strong> Attend in person at our corporate office, or join a private Google Meet / Zoom link.</span>
+              </li>
+              <li style="display:flex;gap:10px;">
+                <span style="color:var(--accent);font-weight:700;">3.</span>
+                <span><strong>Actionable Roadmap:</strong> Receive a clear, step-by-step compliance roadmap with timeline and transparent fee quotation.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Direct Immediate Contact Card -->
+          <div style="background:linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);color:#FFFFFF;border-radius:var(--radius-xl);padding:32px;">
+            <h4 style="color:#FFFFFF;margin-bottom:12px;">Need Urgent Assistance?</h4>
+            <p style="font-size:0.875rem;color:#CBD5E1;margin-bottom:20px;line-height:1.6;">
+              Approaching an ITR filing deadline or have a time-sensitive income tax scrutiny notice? Contact us immediately:
+            </p>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <a href="tel:919876543210" data-config-link="phone" class="btn btn-outline-white" style="width:100%;">
+                Call: <span data-config="phone">+91 98765 43210</span>
+              </a>
+              <a href="https://wa.me/919876543210" data-config-link="whatsapp" class="btn btn-whatsapp" style="width:100%;">
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0;">
+        <div data-config-copyright>© 2026 Apex & Co. All Rights Reserved.</div>
+        <div style="display:flex;gap:20px;">
+          <a href="/privacy-policy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms & Conditions</a>
+          <a href="/disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/forms.js"></script>
+  <script>
+    // Pre-select service from URL parameter (e.g. ?service=Income+Tax)
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceParam = urlParams.get('service');
+      if (serviceParam) {
+        const select = document.getElementById('c_service');
+        if (select) {
+          for (let option of select.options) {
+            if (option.value.toLowerCase().includes(serviceParam.toLowerCase()) || 
+                option.text.toLowerCase().includes(serviceParam.toLowerCase())) {
+              select.value = option.value;
+              break;
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

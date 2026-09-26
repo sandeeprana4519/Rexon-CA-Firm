@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CA & Accounting Services | Tax, GST & Business Advisory</title>
+  <meta name="description" content="Professional CA, accounting, GST, income tax, statutory audit and business compliance services for individuals, startups and growing businesses in India." />
+  <meta name="keywords" content="Chartered Accountant, Tax Consultant, GST Filing, ITR Filing, Accounting Services, Company Registration, Statutory Audit, Tax Planning" />
+  <link rel="canonical" href="https://www.apexca.in/" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Professional CA & Accounting Services You Can Trust" />
+  <meta property="og:description" content="Expert tax, GST, accounting, compliance and business advisory services for individuals, startups and businesses." />
+  <meta property="og:url" content="https://www.apexca.in/" />
+  <meta property="og:site_name" content="Apex & Co. Chartered Accountants" />
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B1F3A'/><text x='50%' y='62%' font-size='50' font-family='serif' font-weight='bold' fill='%23C9A227' text-anchor='middle'>CA</text></svg>" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Supabase CDN Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Apex & Co. Chartered Accountants",
+    "description": "Professional Chartered Accountant and tax consultancy firm providing ITR, GST, Auditing, Company Registration and Financial Advisory.",
+    "telephone": "+91-98765-43210",
+    "email": "contact@apexca.in",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Suite 402, Financial Tower, Corporate Boulevard",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400051",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Sa 09:30-19:00",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Statutory & Quick Contact Bar -->
+  <div class="top-statutory-bar">
+    <div class="container">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span style="display:inline-flex;align-items:center;gap:6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span data-config="membershipNotice">Adhering to ICAI Code of Ethics</span>
+        </span>
+        <span style="opacity:0.4;">|</span>
+        <span style="display:inline-flex;align-items:center;gap:6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span data-config="workingHours">Mon - Sat: 9:30 AM - 7:00 PM</span>
+        </span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px;">
+        <a href="tel:919876543210" data-config-link="phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span data-config="phone">+91 98765 43210</span>
+        </a>
+        <a href="mailto:contact@apexca.in" data-config-link="email">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span data-config="email">contact@apexca.in</span>
+        </a>
+        <a href="/admin/login.html" style="font-size:0.75rem;opacity:0.8;border-left:1px solid rgba(255,255,255,0.2);padding-left:12px;">Admin Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header (3 Zones) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="/" class="brand-wordmark">
+        <div class="brand-icon">CA</div>
+        <span data-config="firmName">Rexon CA Firm</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="/" class="nav-link active">Home</a>
+        <a href="/about.html" class="nav-link">About Us</a>
+        <a href="/services.html" class="nav-link">Services</a>
+        <a href="/services/income-tax.html" class="nav-link">Tax Services</a>
+        <a href="/services/gst.html" class="nav-link">GST</a>
+        <a href="/services/accounting.html" class="nav-link">Accounting</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Zone 3: Header Actions -->
+      <div class="header-actions">
+        <a href="https://wa.me/919876543210" data-config-link="whatsapp" class="btn btn-outline btn-sm" title="Chat on WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.004.577 1.777.785 2.806.785 3.183 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.768-5.768-5.768zm0 10.43c-.886 0-1.637-.253-2.316-.672l-.166-.098-1.571.412.419-1.531-.108-.172c-.443-.706-.677-1.428-.676-2.603.001-2.573 2.093-4.666 4.418-4.666 2.324 0 4.416 2.093 4.416 4.666 0 2.573-2.092 4.664-4.418 4.664z"/></svg>
+          WhatsApp
+        </a>
+        <a href="/consultation.html" class="btn btn-accent btn-sm">
+          Book Consultation
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="kicker">Chartered Accountancy & Tax Advisory</span>
+          <h1>Professional CA & Accounting Services <span class="gold">You Can Trust</span></h1>
+          <p class="lead">
+            Expert tax, GST, accounting, compliance, and corporate business advisory services tailored for Indian enterprises, professionals, and ambitious startups.
+          </p>
+          <div class="hero-actions">
+            <a href="/consultation.html" class="btn btn-accent btn-lg">
+              Book a Consultation
+            </a>
+            <a href="tel:919876543210" data-config-link="phone" class="btn btn-outline-white btn-lg">
+              Talk to an Expert
+            </a>
+            <a href="#" data-modal-target="callbackModal" class="btn btn-outline-white btn-lg">
+              Request Callback
+            </a>
+          </div>
+
+          <!-- Trust Indicators -->
+          <div class="hero-trust-row">
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Professional Expertise</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Confidential & Secure</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Transparent Pricing</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Timely Compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="hero-card-avatar">CA</div>
+              <div>
+                <h3 style="color:#FFFFFF;font-size:1.1875rem;" data-config="caName">CA Rajesh Sharma, FCA</h3>
+                <div style="color:var(--accent);font-size:0.875rem;font-weight:600;" data-config="designation">Senior Chartered Accountant</div>
+                <div style="font-size:0.8125rem;color:#CBD5E1;margin-top:2px;" data-config="experience">15+ Years Professional Standing</div>
+              </div>
+            </div>
+
+            <div style="font-size:0.9375rem;color:#E2E8F0;margin-bottom:20px;line-height:1.6;">
+              "Providing strategic financial clarity, seamless regulatory compliance, and tax optimization to help your enterprise thrive with peace of mind."
+            </div>
+
+            <div style="background:rgba(0,0,0,0.2);border-radius:var(--radius-md);padding:16px;border:1px solid rgba(255,255,255,0.08);margin-bottom:20px;">
+              <div style="font-size:0.8125rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--accent);font-weight:700;margin-bottom:8px;">Core Specializations</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;font-size:0.8125rem;color:#FFFFFF;">
+                <span style="background:rgba(255,255,255,0.1);padding:4px 8px;border-radius:4px;">Corporate Tax</span>
+                <span style="background:rgba(255,255,255,0.1);padding:4px 8px;border-radius:4px;">GST Audits</span>
+                <span style="background:rgba(255,255,255,0.1);padding:4px 8px;border-radius:4px;">Statutory Audits</span>
+                <span style="background:rgba(255,255,255,0.1);padding:4px 8px;border-radius:4px;">Startup ROC</span>
+              </div>
+            </div>
+
+            <a href="https://wa.me/919876543210" data-config-link="whatsapp" class="btn btn-whatsapp" style="width:100%;">
+              Direct WhatsApp Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Proof Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-config="experience">15+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2,500+</div>
+          <div class="stat-label">Clients Served</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">12,000+</div>
+          <div class="stat-label">Returns Filed Successfully</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">450+</div>
+          <div class="stat-label">Corporate Entities Advised</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section Preview -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;">
+        <div>
+          <span class="kicker">About Our Practice</span>
+          <h2 style="font-size:2.25rem;margin-bottom:20px;">Dedicated Financial Leadership & Uncompromising Ethics</h2>
+          <p style="color:var(--text-muted);font-size:1.0625rem;margin-bottom:16px;">
+            At <strong data-config="firmName">Apex & Co. Chartered Accountants</strong>, we bridge regulatory requirements with strategic business foresight. Led by qualified Chartered Accountants with extensive industry expertise, our firm delivers dependable tax, audit, and financial accounting solutions.
+          </p>
+          <p style="color:var(--text-muted);margin-bottom:24px;">
+            Whether you are an individual navigating capital gains, an early-stage startup establishing your legal corporate entity, or an established company requiring statutory audit and GST compliance, we safeguard your financial interests with precision and confidentiality.
+          </p>
+          
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px;">
+            <div style="border-left:3px solid var(--accent);padding-left:14px;">
+              <div style="font-weight:700;color:var(--primary);">Our Mission</div>
+              <div style="font-size:0.875rem;color:var(--text-muted);">To provide proactive, transparent, and legally sound financial guidance that empowers business growth.</div>
+            </div>
+            <div style="border-left:3px solid var(--secondary);padding-left:14px;">
+              <div style="font-weight:700;color:var(--primary);">Our Vision</div>
+              <div style="font-size:0.875rem;color:var(--text-muted);">To be the most trusted accounting and compliance partner for modern Indian commerce.</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:16px;">
+            <a href="/about.html" class="btn btn-primary">
+              Learn More About Us
+            </a>
+            <a href="/contact.html" class="btn btn-outline">
+              Contact Office
+            </a>
+          </div>
+        </div>
+
+        <div style="background:var(--surface);border:1px solid var(--border-color);border-radius:var(--radius-xl);padding:36px;box-shadow:var(--shadow-md);">
+          <h3 style="font-size:1.375rem;margin-bottom:20px;color:var(--primary);border-bottom:1px solid var(--border-light);padding-bottom:12px;">
+            Professional Standards
+          </h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;">
+            <li style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--accent-light);color:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;">✓</div>
+              <div>
+                <strong style="color:var(--primary);">Strict Confidentiality:</strong>
+                <div style="font-size:0.875rem;color:var(--text-muted);">Bank-grade data safety and strict non-disclosure agreements for all financial documents.</div>
+              </div>
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--accent-light);color:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;">✓</div>
+              <div>
+                <strong style="color:var(--primary);">Zero-Penalty Compliance:</strong>
+                <div style="font-size:0.875rem;color:var(--text-muted);">Systematic tracking of ITR, GST, ROC, and TDS deadlines to prevent interest charges and notices.</div>
+              </div>
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--accent-light);color:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;">✓</div>
+              <div>
+                <strong style="color:var(--primary);">Proactive Advisory:</strong>
+                <div style="font-size:0.875rem;color:var(--text-muted);">Quarterly tax projections and legal deductions that optimize your legitimate savings.</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Services Grid -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Our Core Services</span>
+        <h2>End-to-End Accounting & Advisory Solutions</h2>
+        <p>Comprehensive regulatory compliance, tax optimization, and financial bookkeeping executed by qualified professionals.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. Income Tax Services -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Income Tax Services</h3>
+          <p>
+            Complete ITR filing for individuals, professionals, and corporate entities. Proactive tax planning, computation of Capital Gains, and swift assistance for Income Tax notices under 143(1), 148, and scrutiny.
+          </p>
+          <div class="service-card-footer">
+            <a href="/services/income-tax.html" class="service-link">Learn More →</a>
+            <a href="/consultation.html?service=Income+Tax" class="btn btn-outline btn-sm">Book Consultation</a>
+          </div>
+        </div>
+
+        <!-- 2. GST Services -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>GST Services</h3>
+          <p>
+            Seamless GST registration, monthly GSTR-1, GSTR-3B filings, annual GSTR-9/9C reconciliation, ITC mismatch rectification, GST amendments, cancellations, and department notice representation.
+          </p>
+          <div class="service-card-footer">
+            <a href="/services/gst.html" class="service-link">Learn More →</a>
+            <a href="/consultation.html?service=GST+Services" class="btn btn-outline btn-sm">Book Consultation</a>
+          </div>
+        </div>
+
+        <!-- 3. Accounting & Bookkeeping -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Accounting & Bookkeeping</h3>
+          <p>
+            Full-cycle monthly accounting, ledger maintenance, bank reconciliations, profit & loss reports, balance sheets, accounts payable/receivable management, and automated payroll compliance.
+          </p>
+          <div class="service-card-footer">
+            <a href="/services/accounting.html" class="service-link">Learn More →</a>
+            <a href="/consultation.html?service=Accounting" class="btn btn-outline btn-sm">Book Consultation</a>
+          </div>
+        </div>
+
+        <!-- 4. Company Registration -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><rect x="9" y="9" width="4" height="4"/></svg>
+          </div>
+          <h3>Company Registration</h3>
+          <p>
+            Fast-track incorporation of Private Limited Companies, LLPs, One Person Companies (OPC), Partnership Firms, MSME / Udyam registration, Startup India recognition, and PAN/TAN procurement.
+          </p>
+          <div class="service-card-footer">
+            <a href="/services/company-registration.html" class="service-link">Learn More →</a>
+            <a href="/consultation.html?service=Company+Registration" class="btn btn-outline btn-sm">Book Consultation</a>
+          </div>
+        </div>
+
+        <!-- 5. Audit & Compliance -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3>Audit & Compliance</h3>
+          <p>
+            Independent Statutory Audits under Companies Act 2013, Tax Audits under Section 44AB of the Income Tax Act, Internal Audits, Stock Audits, and comprehensive forensic review of internal financial controls.
+          </p>
+          <div class="service-card-footer">
+            <a href="/services/audit.html" class="service-link">Learn More →</a>
+            <a href="/consultation.html?service=Audit" class="btn btn-outline btn-sm">Book Consultation</a>
+          </div>
+        </div>
+
+        <!-- 6. Business & Financial Advisory -->
+        <div class="service-card">
+          <div class="service-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4"/><path d="M12 16V8"/></svg>
+          </div>
+          <h3>Business & Financial Advisory</h3>
+          <p>
+            Virtual CFO advisory for growing SMEs, Annual ROC filings (AOC-4, MGT-7), business valuation certificates, CMA reports for bank loan proposals, Digital Signature Certificates (DSC), and FSSAI licensing.
+          </p>
+          <div class="service-card-footer">
+            <a href="/services/business-advisory.html" class="service-link">Learn More →</a>
+            <a href="/consultation.html?service=Advisory" class="btn btn-outline btn-sm">Book Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Dual Booking / Consultation Section -->
+  <section class="section" id="book-consultation">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:start;">
+        <div>
+          <span class="kicker">Schedule An Appointment</span>
+          <h2 style="font-size:2.25rem;margin-bottom:16px;">Request a Professional Consultation</h2>
+          <p style="color:var(--text-muted);font-size:1.0625rem;margin-bottom:24px;">
+            Discuss your taxation, accounting, or startup compliance queries directly with our certified professionals. Submit your details, and we will confirm your consultation slot.
+          </p>
+
+          <div style="background:var(--surface);border:1px solid var(--border-color);border-radius:var(--radius-lg);padding:24px;margin-bottom:24px;">
+            <div style="font-weight:700;color:var(--primary);margin-bottom:8px;">How Our Consultation Works:</div>
+            <ol style="margin-left:20px;color:var(--text-muted);font-size:0.9375rem;line-height:1.7;">
+              <li><strong>Submit Request:</strong> Select your service requirement and preferred schedule.</li>
+              <li><strong>Case Review:</strong> Our Chartered Accountants analyze your requirements.</li>
+              <li><strong>Confirmation:</strong> We confirm the meeting via phone or Google Meet / In-person.</li>
+            </ol>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div style="width:36px;height:36px;border-radius:50%;background:var(--surface-alt);display:flex;align-items:center;justify-content:center;color:var(--secondary);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:0.8125rem;color:var(--text-muted);">Direct Phone Assistance</div>
+                <div style="font-weight:700;color:var(--primary);" data-config="phone">+91 98765 43210</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div style="width:36px;height:36px;border-radius:50%;background:#DCFCE7;display:flex;align-items:center;justify-content:center;color:#16803D;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.004.577 1.777.785 2.806.785 3.183 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.768-5.768-5.768zm0 10.43c-.886 0-1.637-.253-2.316-.672l-.166-.098-1.571.412.419-1.531-.108-.172c-.443-.706-.677-1.428-.676-2.603.001-2.573 2.093-4.666 4.418-4.666 2.324 0 4.416 2.093 4.416 4.666 0 2.573-2.092 4.664-4.418 4.664z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:0.8125rem;color:var(--text-muted);">Quick WhatsApp Query</div>
+                <div style="font-weight:700;color:var(--primary);" data-config="whatsapp">+91 98765 43210</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultation Form Component -->
+        <div class="form-card">
+          <h3 style="font-size:1.375rem;margin-bottom:8px;color:var(--primary);">Book Your Consultation</h3>
+          <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:24px;">All submissions are saved securely to our Supabase database.</p>
+
+          <form id="consultationForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="c_fullName">Full Name <span class="req">*</span></label>
+                <input type="text" id="c_fullName" name="fullName" class="form-control" placeholder="e.g. Ramesh Kumar" required />
+                <div class="form-feedback">Please enter your full name.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="c_phone">Mobile Number <span class="req">*</span></label>
+                <input type="tel" id="c_phone" name="phone" class="form-control" placeholder="10-digit mobile number" required />
+                <div class="form-feedback">Please enter a valid mobile number.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="c_email">Email Address <span class="req">*</span></label>
+                <input type="email" id="c_email" name="email" class="form-control" placeholder="name@example.com" required />
+                <div class="form-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="c_service">Service Required <span class="req">*</span></label>
+                <select id="c_service" name="service" class="form-control" required>
+                  <option value="">Select a Service</option>
+                  <option value="Income Tax Return Filing">Income Tax Return (ITR)</option>
+                  <option value="Tax Notice Assistance">Income Tax Notice Assistance</option>
+                  <option value="GST Registration & Filing">GST Registration & Filing</option>
+                  <option value="Monthly Accounting & Bookkeeping">Monthly Accounting / Bookkeeping</option>
+                  <option value="Company / LLP Registration">Company / LLP Registration</option>
+                  <option value="Statutory / Tax Audit">Statutory / Tax Audit</option>
+                  <option value="General Financial Advisory">General Financial Advisory</option>
+                </select>
+                <div class="form-feedback">Please select the service required.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="c_date">Preferred Date <span class="req">*</span></label>
+                <input type="date" id="c_date" name="preferredDate" class="form-control" required />
+                <div class="form-feedback">Please pick a preferred date.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="c_time">Preferred Time Slot <span class="req">*</span></label>
+                <select id="c_time" name="preferredTime" class="form-control" required>
+                  <option value="">Select Time Slot</option>
+                  <option value="Morning (10:00 AM - 01:00 PM)">Morning (10:00 AM - 01:00 PM)</option>
+                  <option value="Afternoon (02:00 PM - 05:00 PM)">Afternoon (02:00 PM - 05:00 PM)</option>
+                  <option value="Evening (05:00 PM - 07:00 PM)">Evening (05:00 PM - 07:00 PM)</option>
+                </select>
+                <div class="form-feedback">Please select a time slot.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="c_message">Brief Requirements (Optional)</label>
+              <textarea id="c_message" name="message" class="form-control" rows="3" placeholder="Tell us briefly about your tax, turnover, or entity structure..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+              Submit Consultation Request
+            </button>
+            <div style="font-size:0.75rem;color:var(--text-muted);text-align:center;margin-top:12px;">
+              Your information is strictly protected under professional non-disclosure guidelines.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion FAQ Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Frequently Asked Questions</span>
+        <h2>Answers to Common CA & Tax Questions</h2>
+        <p>Clear, direct information on filing deadlines, documentation, and accounting compliance.</p>
+      </div>
+
+      <div class="accordion">
+        <!-- FAQ 1 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>What documents are required for Income Tax Return (ITR) filing?</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="accordion-content">
+            For individuals and salaried employees: PAN card, Aadhaar card, Form 16 from your employer, Form 26AS, Annual Information Statement (AIS/TIS), bank statements for all active accounts, and proofs of tax-saving investments (Section 80C, 80D, home loan interest certificates, capital gains statements). For business owners, audited or unaudited profit & loss accounts and balance sheets are also required.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>Who needs mandatory GST registration in India?</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="accordion-content">
+            GST registration is mandatory for businesses whose annual aggregate turnover exceeds ₹40 Lakhs for goods (₹20 Lakhs for special category states) and ₹20 Lakhs for service providers (₹10 Lakhs in special states). In addition, any business engaged in inter-state taxable supply, casual taxable persons, or selling through e-commerce portals (Amazon, Flipkart) must obtain GST registration irrespective of turnover.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>How long does GST registration take?</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="accordion-content">
+            Once all required documents (PAN, Aadhaar, proof of business address, electricity bill, rent agreement/NOC, and bank details) are verified and submitted with Aadhaar authentication, GST registration approval typically takes 3 to 7 working days from the GST department.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>Can you handle ongoing monthly accounting and payroll?</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="accordion-content">
+            Yes. We provide complete outsourced monthly bookkeeping, ledger entries, bank reconciliations, accounts payable/receivable management, monthly TDS computations, and payroll salary slip generation. You receive structured financial reports at the end of each month.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>I received an Income Tax Notice. How can your firm help?</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="accordion-content">
+            Do not panic. Notices under Section 143(1), 139(9) (defective return), 142(1), or 148 are common. Our Chartered Accountants inspect the underlying calculation error or mismatch in 26AS/AIS, draft a legally backed rectification or response on the e-filing portal, and represent your case before the assessing authority if necessary.
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>How can I book a personal or virtual consultation?</span>
+            <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="accordion-content">
+            You can fill out the consultation form above, call our office directly, or click the WhatsApp button. Our team will coordinate an in-person meeting at our office or schedule a video conference via Google Meet / Zoom at your convenience.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials (Clearly Marked Placeholders) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Client Experiences</span>
+        <h2>What Our Clients Say</h2>
+        <p>Feedback from businesses, professionals, and entrepreneurs who rely on our advisory.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Apex & Co. handled our Private Limited company incorporation and subsequent GST filings seamlessly. Their proactive deadline reminders saved us from late penalties."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">MS</div>
+            <div>
+              <div style="font-weight:700;color:var(--primary);">Manish Sharma</div>
+              <div style="font-size:0.8125rem;color:var(--text-muted);">Founder, Logistics Tech SME</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "I had complex capital gains from real estate sale and stock options. The team computed everything methodically and filed my ITR well ahead of the due date."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">AK</div>
+            <div>
+              <div style="font-weight:700;color:var(--primary);">Anita Krishnan</div>
+              <div style="font-size:0.8125rem;color:var(--text-muted);">Senior IT Executive</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Their statutory audit and internal review uncovered several reconciliations our internal accounts had missed. Highly professional and thorough practice."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">RD</div>
+            <div>
+              <div style="font-weight:700;color:var(--primary);">Rohit D'Souza</div>
+              <div style="font-size:0.8125rem;color:var(--text-muted);">Managing Director, Manufacturing LLP</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call To Action Banner -->
+  <section class="container" style="margin-bottom:80px;">
+    <div class="cta-banner">
+      <h2>Need Help With Your Tax, GST or Corporate Accounting?</h2>
+      <p>Speak directly with an experienced Chartered Accountant to optimize your taxes and maintain pristine compliance.</p>
+      <div class="cta-banner-actions">
+        <a href="/consultation.html" class="btn btn-accent btn-lg">Book Consultation Now</a>
+        <a href="https://wa.me/919876543210" data-config-link="whatsapp" class="btn btn-outline-white btn-lg">Message on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About & Info -->
+        <div class="footer-col">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+            <div class="brand-icon" style="width:34px;height:34px;font-size:1rem;">CA</div>
+            <h4 style="margin-bottom:0;color:#FFFFFF;" data-config="firmName">Apex & Co. Chartered Accountants</h4>
+          </div>
+          <p style="font-size:0.875rem;line-height:1.7;margin-bottom:20px;">
+            Premier Chartered Accountancy and financial consultancy firm delivering ethical, comprehensive tax planning, auditing, corporate compliance, and accounting services.
+          </p>
+          <div style="font-size:0.8125rem;color:#64748B;">
+            <span data-config="membershipNotice">Adhering strictly to the Code of Ethics established by the ICAI.</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/services.html">All Services</a></li>
+            <li><a href="/consultation.html">Book Consultation</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/admin/login.html">Admin Portal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="/services/income-tax.html">Income Tax & ITR</a></li>
+            <li><a href="/services/gst.html">GST Registration & Filing</a></li>
+            <li><a href="/services/accounting.html">Bookkeeping & Accounts</a></li>
+            <li><a href="/services/company-registration.html">Company Incorporation</a></li>
+            <li><a href="/services/audit.html">Statutory & Tax Audit</a></li>
+            <li><a href="/services/business-advisory.html">Business & ROC Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="footer-col">
+          <h4>Office Address</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-config="addressFull">Suite 402, Financial Tower, Corporate Boulevard, Mumbai, Maharashtra - 400051</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:919876543210" data-config-link="phone" data-config="phone">+91 98765 43210</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contact@apexca.in" data-config-link="email" data-config="email">contact@apexca.in</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span data-config="workingHours">Mon - Sat: 9:30 AM - 7:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div data-config-copyright>© 2026 Apex & Co. Chartered Accountants. All Rights Reserved.</div>
+        <div style="display:flex;gap:20px;">
+          <a href="/privacy-policy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms & Conditions</a>
+          <a href="/disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/919876543210" data-config-link="whatsapp" class="floating-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.004.577 1.777.785 2.806.785 3.183 0 5.768-2.587 5.768-5.766.001-3.18-2.585-5.768-5.768-5.768zm0 10.43c-.886 0-1.637-.253-2.316-.672l-.166-.098-1.571.412.419-1.531-.108-.172c-.443-.706-.677-1.428-.676-2.603.001-2.573 2.093-4.666 4.418-4.666 2.324 0 4.416 2.093 4.416 4.666 0 2.573-2.092 4.664-4.418 4.664z"/></svg>
+  </a>
+
+  <!-- Floating Quick Callback Button -->
+  <button class="floating-callback-btn" data-modal-target="callbackModal" aria-label="Request Callback">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Request Callback
+  </button>
+
+  <!-- Quick Callback Modal -->
+  <div class="modal-overlay" id="callbackModal" role="dialog" aria-modal="true" aria-labelledby="cbModalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="cbModalTitle" style="font-size:1.1875rem;color:var(--primary);">Request a Quick Callback</h3>
+        <button class="modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:20px;">
+          Leave your number and preferred time. A senior accountant will call you back.
+        </p>
+        <form id="callbackForm" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="cb_name">Your Name <span class="req">*</span></label>
+            <input type="text" id="cb_name" name="name" class="form-control" placeholder="Full Name" required />
+            <div class="form-feedback">Please enter your name.</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cb_phone">Mobile Number <span class="req">*</span></label>
+            <input type="tel" id="cb_phone" name="phone" class="form-control" placeholder="10-digit mobile" required />
+            <div class="form-feedback">Please enter a valid mobile number.</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cb_service">Service Area</label>
+            <select id="cb_service" name="service" class="form-control">
+              <option value="Income Tax / ITR">Income Tax / ITR</option>
+              <option value="GST Services">GST Services</option>
+              <option value="Accounting & Bookkeeping">Accounting & Bookkeeping</option>
+              <option value="Company Incorporation">Company Incorporation</option>
+              <option value="Statutory Audit">Statutory Audit</option>
+              <option value="Other Query">Other Query</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cb_time">Preferred Callback Time</label>
+            <select id="cb_time" name="preferredTime" class="form-control">
+              <option value="As soon as possible">As soon as possible</option>
+              <option value="Morning (10:00 AM - 01:00 PM)">Morning (10:00 AM - 01:00 PM)</option>
+              <option value="Afternoon (02:00 PM - 05:00 PM)">Afternoon (02:00 PM - 05:00 PM)</option>
+              <option value="Evening (05:00 PM - 07:00 PM)">Evening (05:00 PM - 07:00 PM)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;margin-top:12px;">
+            Request Call
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/config.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/forms.js"></script>
+</body>
+</html>

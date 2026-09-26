@@ -1,0 +1,6 @@
+{
+  "name": "CA & Accounting Services Portal",
+  "description": "Professional Chartered Accountant and tax consultancy firm website with Supabase integration and admin panel for Hostinger deployment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
